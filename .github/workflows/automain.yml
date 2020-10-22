@@ -15,4 +15,4 @@ jobs:
       - name: Installing
         run: npm install -g surge
       - name: Running
-        run: surge ./nondescript-fiction.surge.sh --token ${{ secrets.SURGE01 }}
+        run: surge ./ myhtmlpage01.surge.sh --token ${{ secrets.SURGE01 }}
