@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v2-beta
         with:
           node-version: 12
-      - name: Install Surge
+      - name: Installing
         run: npm install -g surge
-      - name: Run surge
-        run: surge ./ nondescript-fiction.surge.sh --token $ {{ secrets.SURGE01 }}
+      - name: Running
+        run: surge ./nondescript-fiction.surge.sh --token ${{ secrets.SURGE01 }}
